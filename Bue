@@ -1,0 +1,14 @@
+price = 0
+while price<=0:
+    price = input ("What is Bitcoin price today?\n")
+    price = float(price)
+    if price <= 0:
+        print("It's some kind of mistake, son, try again\n")
+wallet = -1
+while wallet < 0:
+    wallet = input ("How much $ do you have?\n")
+    wallet = float(wallet)
+    if wallet < 0:
+        print("Are you laughing at me boy?\n")
+pos = round(wallet/price, 7)
+print(f"You can buy {pos} BTC")
